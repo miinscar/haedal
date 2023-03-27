@@ -16,8 +16,7 @@ def Selection_sort(arr):
         for j in range(i+1, len(arr)):
             if arr[j] < arr[idx]:
                 idx = j
-        arr[i], arr[idx] = arr[idx], arr[i]   
-         
+        arr[i], arr[idx] = arr[idx], arr[i]            
     return arr
 
 # Bubble Sort
@@ -25,8 +24,7 @@ def Bubble_sort(arr):
     for i in range(len(arr) - 1):
         for j in range(len(arr) - i - 1):
             if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-                
+                arr[j], arr[j+1] = arr[j+1], arr[j]           
     return arr
 
 # Shell Sort
@@ -40,6 +38,5 @@ def Shell_sort(arr):
                 arr[j] = arr[j-g]
                 j -= g
             arr[j] = temp
-        g //= 2
-        
+        g //= 2      
     return arr
